@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  background: #000;
+}
+
+.app {
+  max-width: 70rem;
+  margin: 10em auto;
+  padding: 2rem 1rem;
+  background: #009c8e;
+  border-radius: 25px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app {
+    margin: 0;
+    border-radius: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+.reservation-container {
+  width: 25%;
+  border-right: 0.1rem solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.reservation-header {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.reservation-card-name {
+  max-width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reservation-cards-container {
+  min-height: 35rem;
+  width: 100%;
+}
+
+.reservation-card-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  width: 100%;
+  margin: 1rem -1rem;
+  transition: 1s;
+  animation: popIn 0.4s;
+}
+@keyframes popIn {
+  0% {
+    translate: -5em;
+  }
+  50% {
+    translate: 1em;
+  }
+  100% {
+    translate: 0em;
+  }
+}
+
+.reservation-card-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.reservation-card-remove-btn {
+  border-radius: 0.4rem;
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 3em;
+  background: orangered;
+}
+.reservation-card-remove-btn:hover {
+  opacity: 60%;
+  color: black;
+  background-color: white;
+}
+.reservation-card-remove-btn:hover {
+  color: orangered;
+}
+
+.reservation-card-reserve-btn {
+  border-radius: 0.4rem;
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 100%;
+  background-color: black;
+}
+.reservation-card-reserve-btn:hover {
+  opacity: 60%;
+  color: black;
+  background-color: white;
+}
+
+.reservation-input-container {
+  width: 115%;
+  padding: 0.5rem 1rem;
+  align-self: flex-end;
+}
+.reservation-input-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.23em;
+}
+
+.reservation-input-container input {
+  width: 100%;
+  border-radius: 0.4rem;
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  background: white;
+  color: black;
+}
+
+.reservation-input-container button {
+  border-radius: 0.4rem;
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background: black;
+  width: 100%;
+}
+.reservation-input-container button:hover {
+  opacity: 60%;
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reservation-container {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 2em;
+  }
+  .reservation-card-container {
+    margin: 1rem 0;
+  }
+  .reservation-input-container {
+    width: 80%;
+    align-self: center;
+  }
+}/*# sourceMappingURL=Reservations.css.map */

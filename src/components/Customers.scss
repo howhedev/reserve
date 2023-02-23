@@ -1,0 +1,145 @@
+@import "../App.scss";
+
+.customer-food-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .customers-header {
+    font-size: 1.5rem;
+    color: $white-clr;
+  }
+
+  .customer-food-card-container {
+    background-color: $white-clr;
+    padding: 1rem;
+    border-radius: $b-radius;
+    box-shadow: 0.1rem 0.1rem 1rem $shadow-clr;
+    width: 100%;
+    margin-top: 1em;
+
+    animation: popInFromBelow 0.4s ease-out;
+    @keyframes popInFromBelow {
+      0% {
+        translate: 0 20em;
+      }
+      50% {
+        translate: 0 -1em;
+      }
+      100% {
+        translate: 0em;
+      }
+    }
+
+    .customer-food-card-titles {
+      display: flex;
+      justify-content: space-between;
+
+      .customer-food-card_namentable {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        h1 {
+          overflow: hidden;
+          font-size: 1.6em;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .table-number {
+          @include baseLabel;
+          width: fit-content;
+          font-size: 0.7em;
+          color: $accent-clr;
+          background: $green-clr;
+          margin: 0.3em 0;
+        }
+      }
+
+      h2 {
+        @include baseLabel;
+        margin-left: 0.2em;
+        font-size: 1.87em;
+        color: $accent-clr;
+        background: $green-clr;
+        transition: 2s;
+      }
+    }
+
+    .customer-foods-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      gap: 2em;
+      margin-top: 3.2em;
+
+      .customer-food {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        gap: 1em;
+        p {
+          @include baseLabel;
+          margin-top: 0.6em;
+          transition: 0.5s;
+
+          animation: appear 0.4s;
+          @keyframes appear {
+            0% {
+              scale: 0;
+            }
+            100% {
+              scale: 1;
+            }
+          }
+        }
+      }
+
+      .customer-food-input-container {
+        display: flex;
+        justify-content: space-between;
+
+        form {
+          display: flex;
+          gap: 0.2em;
+        }
+
+        select {
+          @include baseLabel;
+          text-transform: uppercase;
+          background-color: $white-clr;
+          outline: 1px solid black;
+
+          border-radius: 0.5em;
+          color: $accent-clr;
+        }
+
+        .add-food-btn {
+          @include baseButton;
+          background-color: $green-clr;
+          color: $accent-clr;
+        }
+        .pay-btn {
+          @include baseButton;
+          background-color: $red-clr;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .customer-food-input-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+    }
+  }
+}

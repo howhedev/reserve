@@ -1,0 +1,113 @@
+@import "../App.scss";
+
+.reservation-container {
+  width: 25%;
+  border-right: 0.1rem solid $white-clr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.reservation-header {
+  font-size: 1.5rem;
+  color: $white-clr;
+}
+
+.reservation-card-name {
+  max-width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reservation-cards-container {
+  min-height: 35rem;
+  width: 100%;
+}
+
+.reservation-card-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white-clr;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  width: 100%;
+  margin: 1rem -1rem;
+  transition: 1s;
+  animation: popIn 0.4s;
+  @keyframes popIn {
+    0% {
+      translate: -5em;
+    }
+    50% {
+      translate: 1em;
+    }
+    100% {
+      translate: 0em;
+    }
+  }
+}
+
+.reservation-card-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+}
+.reservation-card-remove-btn {
+  @include baseButton;
+  width: 3em;
+  background: $red-clr;
+
+  &:hover {
+    color: $red-clr;
+  }
+}
+.reservation-card-reserve-btn {
+  @include baseButton;
+  width: 100%;
+  background-color: $accent-clr;
+}
+.reservation-input-container {
+  width: 115%;
+  padding: 0.5rem 1rem;
+  align-self: flex-end;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.23em;
+  }
+}
+
+.reservation-input-container input {
+  width: 100%;
+  @include baseLabel;
+  background: $white-clr;
+  color: $accent-clr;
+}
+
+.reservation-input-container button {
+  @include baseButton;
+  background: $accent-clr;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reservation-container {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 2em;
+  }
+
+  .reservation-card-container {
+    margin: 1rem 0;
+  }
+
+  .reservation-input-container {
+    width: 80%;
+    align-self: center;
+  }
+}

@@ -1,0 +1,137 @@
+@import "../App.scss";
+
+// .modalBackground {
+//   width: calc(100% + 10rem);
+//   height: calc(100% + 10rem);
+//   left: -5rem;
+//   top: -5rem;
+//   background-color: $bg-clr;
+//   position: absolute;
+//   display: flex;
+//   border-radius: $b-radius;
+//   justify-content: center;
+//   align-items: center;
+//   margin: auto;
+//   padding: 2em;
+// }
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContainer {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  width: 40%;
+  max-width: max-content;
+  transform: translate(-50%, -50%);
+  border-radius: $b-radius;
+  background-color: $white-clr;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+  justify-content: space-between;
+  transition: 0.5s;
+
+  animation: appear 0.4s;
+  @keyframes appear {
+    0% {
+      scale: 0;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4em 0;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: $b-radius;
+    padding: 1em;
+    gap: 5em;
+  }
+
+  .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .radio-toolbar {
+    label {
+      @include baseButton;
+
+      background-color: #bfb;
+      padding: 2.3em;
+      cursor: pointer;
+      color: $accent-clr;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        background-color: #dfd;
+      }
+    }
+
+    input[type="radio"] {
+      opacity: 0;
+      position: fixed;
+      width: 0;
+
+      &:checked + label {
+        background-color: $accent-clr;
+        color: $white-clr;
+      }
+
+      &:disabled + label {
+        background-color: $red-clr;
+        color: $white-clr;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    button {
+      @include baseButton;
+      border: none;
+      padding: 0.4em 0.7em;
+
+      font-size: 1.5em;
+
+      font-weight: bold;
+    }
+  }
+}
+
+#cancelBtn {
+  background-color: $white-clr;
+  border: 1px solid $accent-clr;
+  color: $accent-clr;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .modalContainer {
+    width: 90%;
+    max-width: max-content;
+  }
+}
