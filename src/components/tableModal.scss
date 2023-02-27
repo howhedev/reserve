@@ -133,5 +133,15 @@
   .modalContainer {
     width: 90%;
     max-width: max-content;
+
+    fieldset {
+      gap: 2em;
+      margin: 0;
+    }
+    .radio-toolbar {
+      label {
+        padding: 0.8em;
+      }
+    }
   }
 }

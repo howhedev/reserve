@@ -165,11 +165,8 @@ html {
   border: none;
   cursor: pointer;
   transition: 0.5s;
-  background-color: #bfb;
-  color: black;
 }
 .customer-food-container .customer-food-card-container .customer-foods-container .customer-food-input-container .add-food-btn:hover {
-  opacity: 60%;
   color: black;
   background-color: white;
 }
@@ -184,7 +181,6 @@ html {
   background-color: orangered;
 }
 .customer-food-container .customer-food-card-container .customer-foods-container .customer-food-input-container .pay-btn:hover {
-  opacity: 60%;
   color: black;
   background-color: white;
 }

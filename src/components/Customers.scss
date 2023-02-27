@@ -118,8 +118,6 @@
 
         .add-food-btn {
           @include baseButton;
-          background-color: $green-clr;
-          color: $accent-clr;
         }
         .pay-btn {
           @include baseButton;

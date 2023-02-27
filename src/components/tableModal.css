@@ -99,7 +99,6 @@ html {
   font-weight: 500;
 }
 .modalContainer .radio-toolbar label:hover {
-  opacity: 60%;
   color: black;
   background-color: white;
 }
@@ -140,7 +139,6 @@ html {
   font-weight: bold;
 }
 .modalContainer .footer button:hover {
-  opacity: 60%;
   color: black;
   background-color: white;
 }
@@ -159,5 +157,12 @@ html {
     width: 90%;
     max-width: -moz-max-content;
     max-width: max-content;
+  }
+  .modalContainer fieldset {
+    gap: 2em;
+    margin: 0;
+  }
+  .modalContainer .radio-toolbar label {
+    padding: 0.8em;
   }
 }/*# sourceMappingURL=tableModal.css.map */
