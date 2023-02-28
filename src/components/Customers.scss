@@ -7,7 +7,7 @@
 
   .customers-header {
     font-size: 1.5rem;
-    color: $white-clr;
+    color: $accent-clr;
   }
 
   .customer-food-card-container {
@@ -45,6 +45,8 @@
           font-size: 1.6em;
           white-space: nowrap;
           text-overflow: ellipsis;
+          color: $accent-clr;
+          margin-bottom: 0.2em;
         }
 
         .table-number {
@@ -110,7 +112,7 @@
           @include baseLabel;
           text-transform: uppercase;
           background-color: $white-clr;
-          outline: 1px solid black;
+          outline: 1px solid rgb(61, 90, 128, 0.23);
 
           border-radius: 0.5em;
           color: $accent-clr;

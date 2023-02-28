@@ -2,7 +2,7 @@
 
 .reservation-container {
   width: 25%;
-  border-right: 0.1rem solid $white-clr;
+  border-right: 0.12rem solid $accent-clr;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,13 +11,14 @@
 
 .reservation-header {
   font-size: 1.5rem;
-  color: $white-clr;
+  color: $accent-clr;
 }
 
 .reservation-card-name {
   max-width: 60%;
   overflow: hidden;
   white-space: nowrap;
+  color: $accent-clr;
   text-overflow: ellipsis;
 }
 

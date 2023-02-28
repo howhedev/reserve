@@ -39,7 +39,7 @@ html {
 }
 .customer-food-container .customers-header {
   font-size: 1.5rem;
-  color: #e0fbfc;
+  color: #3d5a80;
 }
 .customer-food-container .customer-food-card-container {
   background-color: #e0fbfc;
@@ -75,6 +75,8 @@ html {
   font-size: 1.6em;
   white-space: nowrap;
   text-overflow: ellipsis;
+  color: #3d5a80;
+  margin-bottom: 0.2em;
 }
 .customer-food-container .customer-food-card-container .customer-food-card-titles .customer-food-card_namentable .table-number {
   border-radius: 0.4rem;
@@ -153,7 +155,7 @@ html {
   transition: 0.5s;
   text-transform: uppercase;
   background-color: #e0fbfc;
-  outline: 1px solid black;
+  outline: 1px solid rgba(61, 90, 128, 0.23);
   border-radius: 0.5em;
   color: #3d5a80;
 }

@@ -34,7 +34,7 @@ html {
 }
 .reservation-container {
   width: 25%;
-  border-right: 0.1rem solid #e0fbfc;
+  border-right: 0.12rem solid #3d5a80;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,13 +43,14 @@ html {
 
 .reservation-header {
   font-size: 1.5rem;
-  color: #e0fbfc;
+  color: #3d5a80;
 }
 
 .reservation-card-name {
   max-width: 60%;
   overflow: hidden;
   white-space: nowrap;
+  color: #3d5a80;
   text-overflow: ellipsis;
 }
 

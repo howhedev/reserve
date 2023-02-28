@@ -81,6 +81,7 @@ html {
 .modalContainer .title {
   display: inline-block;
   text-align: center;
+  color: #3d5a80;
   margin-top: 10px;
 }
 .modalContainer .radio-toolbar label {
