@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
   max-width: 70rem;
   margin: 10em auto;
   padding: 2rem 1rem;
-  background: #009c8e;
+  background: #e0fbfc;
   border-radius: 25px;
 }
 

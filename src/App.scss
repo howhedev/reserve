@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 html {
   background: #000;
 }
 
-$accent-clr: black;
-$white-clr: white;
+$accent-clr: #3d5a80;
+$white-clr: #e0fbfc;
 $shadow-clr: rgba(0, 0, 0, 0.171);
-$red-clr: orangered;
-$green-clr: #bfb;
-$bg-clr: #009c8e;
+$red-clr: #ee6c4d;
+$green-clr: #98c1d9;
+$bg-clr: #e0fbfc;
 $b-radius: 0.4rem;
 
 .app {

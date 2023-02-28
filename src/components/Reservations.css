@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
   max-width: 70rem;
   margin: 10em auto;
   padding: 2rem 1rem;
-  background: #009c8e;
+  background: #e0fbfc;
   border-radius: 25px;
 }
 
@@ -34,7 +34,7 @@ html {
 }
 .reservation-container {
   width: 25%;
-  border-right: 0.1rem solid white;
+  border-right: 0.1rem solid #e0fbfc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,7 +43,7 @@ html {
 
 .reservation-header {
   font-size: 1.5rem;
-  color: white;
+  color: #e0fbfc;
 }
 
 .reservation-card-name {
@@ -61,7 +61,7 @@ html {
 .reservation-card-container {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #e0fbfc;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
@@ -92,36 +92,36 @@ html {
 .reservation-card-remove-btn {
   border-radius: 0.4rem;
   padding: 0.5em 1em;
-  background: black;
-  color: white;
+  background: #3d5a80;
+  color: #e0fbfc;
   border: none;
   cursor: pointer;
   transition: 0.5s;
   width: 3em;
-  background: orangered;
+  background: #ee6c4d;
 }
 .reservation-card-remove-btn:hover {
-  color: black;
-  background-color: white;
+  color: #3d5a80;
+  background-color: #e0fbfc;
 }
 .reservation-card-remove-btn:hover {
-  color: orangered;
+  color: #ee6c4d;
 }
 
 .reservation-card-reserve-btn {
   border-radius: 0.4rem;
   padding: 0.5em 1em;
-  background: black;
-  color: white;
+  background: #3d5a80;
+  color: #e0fbfc;
   border: none;
   cursor: pointer;
   transition: 0.5s;
   width: 100%;
-  background-color: black;
+  background-color: #3d5a80;
 }
 .reservation-card-reserve-btn:hover {
-  color: black;
-  background-color: white;
+  color: #3d5a80;
+  background-color: #e0fbfc;
 }
 
 .reservation-input-container {
@@ -134,33 +134,36 @@ html {
   flex-direction: column;
   gap: 0.23em;
 }
+.reservation-input-container form input {
+  outline: 1px solid rgba(61, 90, 128, 0.23);
+}
 
 .reservation-input-container input {
   width: 100%;
   border-radius: 0.4rem;
   padding: 0.5em 1em;
-  background: black;
-  color: white;
+  background: #3d5a80;
+  color: #e0fbfc;
   border: none;
   transition: 0.5s;
-  background: white;
-  color: black;
+  background: #e0fbfc;
+  color: #3d5a80;
 }
 
 .reservation-input-container button {
   border-radius: 0.4rem;
   padding: 0.5em 1em;
-  background: black;
-  color: white;
+  background: #3d5a80;
+  color: #e0fbfc;
   border: none;
   cursor: pointer;
   transition: 0.5s;
-  background: black;
+  background: #3d5a80;
   width: 100%;
 }
 .reservation-input-container button:hover {
-  color: black;
-  background-color: white;
+  color: #3d5a80;
+  background-color: #e0fbfc;
 }
 
 @media only screen and (max-width: 1000px) {
