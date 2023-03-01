@@ -75,12 +75,12 @@
       width: 100%;
       justify-content: space-between;
       gap: 2em;
-      margin-top: 3.2em;
 
       .customer-food {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+
+        padding: 2em 0;
         gap: 1em;
         p {
           @include baseLabel;
